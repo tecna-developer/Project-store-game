@@ -1,3 +1,38 @@
 .cards {
     grid-column: center-start / center-end;
+    padding: 5vh 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem 4rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$color-blue-dark;
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 500;
+        line-height: 100%;
+        background-color:$color-green-dark;
+        padding: 1.5rem 10rem;
+        
+    }
+    &__svg {
+        width: 2rem;
+        height: 2rem;
+    }
+    & > p {
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 300;
+        line-height: 100%;
+    }
+        
 }
