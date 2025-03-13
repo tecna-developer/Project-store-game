@@ -1,0 +1,17 @@
+.banner {
+    &-img {
+        background-color:$color-blue-dark;
+        grid-column: full-start /col-end 4;
+
+    }
+    &-text {
+        background-color:$color-blue-dark;
+        grid-column: col-start 5 / full-end;
+        padding: 4vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: flex-start;   
+    }
+    
+}
