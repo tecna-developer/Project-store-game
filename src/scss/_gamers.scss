@@ -1,4 +1,22 @@
 .gamers {
     background-color:$color-blue-dark;
     grid-column:  col-start 7 / full-end;
+    place-items: center;
+    
+    padding: 5rem;
+    &__box {
+        display: grid;
+        grid-template-columns: max-content min-content;
+        grid-gap: 3rem 4rem;
+        align-items: center;
+        margin-top: 3rem;
+        
+    }
+
+    &__img {
+        width: 7rem;
+        height: 7rem;
+        display: block;
+        grid-row: 1/ -1;
+    }
 }

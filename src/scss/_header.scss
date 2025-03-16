@@ -3,6 +3,7 @@
     grid-column: full-start / col-end 6;
     display: grid;
     grid-template-rows: min-content 4rem minmax(10rem, min-content) 1fr;
+    background: url(../img/header-bg.jpg) center / cover no-repeat;
     // grid-row-gap: 2rem;
     padding: 5rem;
     &__btn {
@@ -28,7 +29,7 @@
     &__games {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 3rem;
+        gap: 3rem;
         place-self: center;
         & img {
             width: 100%;
