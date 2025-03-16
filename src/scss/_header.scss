@@ -1,13 +1,46 @@
 .header {
     background-color:$color-blue-dark;
     grid-column: full-start / col-end 6;
-   
+    display: grid;
+    grid-template-rows: min-content min-content minmax(min-content, 15rem) 15rem 2rem 1fr;
+    grid-row-gap: 2rem;
+    padding: 5rem;
+    &__btn {
+       place-self: start;
+    }
+    &__line_text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-gray-light;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: repeat(3, 1px);
+        place-items: center;
+        
+
+    }
+    &__games {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2rem;
+        place-self: center;
+        & img {
+            width: 100%;
+            display: block;
+            filter: brightness(70%);
+        }
+    }
 
 }
 .logo {   
     display: block;
-    width: 12rem;
-    height: 4.1rem;
-    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8rem;
+    &__svg {
+        width: 12rem;
+        height: 4.1rem;
+        margin: o auto;
+    }
+   
    
 }	

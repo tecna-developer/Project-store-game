@@ -2,5 +2,33 @@
     background-color: $color-green-dark;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
+    padding: 2.5rem 1.5rem;
 
+}
+.burger {
+    border: none;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: $color-gray-light;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+   
+    
+
+    &, &::before, &::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 0.2rem;
+        background-color: $color-gray-light;
+       
+    }
+    &::before {
+        transform: translateY(-1.5rem);
+    }
+    &::after {
+        transform: translateY(1.5rem);
+    }
 }
