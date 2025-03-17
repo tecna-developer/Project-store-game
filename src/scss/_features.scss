@@ -6,6 +6,10 @@
     grid-gap: 3rem 4rem;
     align-items: start;
     justify-content: center;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
     
 }
 .feature {
