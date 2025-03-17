@@ -13,6 +13,7 @@
     }
     @include respond(phone) {
         grid-template-rows: min-content 4rem minmax(20rem, min-content) 1fr;
+        padding: 2rem;
     }
     
     &__btn {
