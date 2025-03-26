@@ -4,16 +4,18 @@
     display: grid;
     grid-template-rows: min-content 4rem minmax(10rem, min-content) 1fr;
     background: url(../img/header-bg.jpg) center / cover no-repeat;
-    // grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     padding: 5rem;
+    align-items:safe center;
 
     @include respond(tab-port) {
         grid-column: full-start / full-end;
        
     }
     @include respond(phone) {
-        grid-template-rows: min-content 4rem minmax(20rem, min-content) 1fr;
+        grid-template-rows: min-content 4rem minmax(15rem, min-content) 1fr;
         padding: 2rem;
+       
     }
     
     &__btn {
